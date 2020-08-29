@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Clarusway Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <form action="*" method="GET">
+      <div>
+        <label for="name"> Name </label> <br /><br />
+        <input
+          type="text"
+          name="Kullanıcı adı"
+          id="name"
+          placeholder="Enter your name"
+        /><br /><br>
+        <label for="surname">Surname </label> <br /><br />
+        <input
+          type="text"
+          name="soyadı"
+          id="surname"
+          placeholder="Enter your Surname"
+        />
+        <br />
+      </div><br>
+
+      <div>
+        <label for="email">EMail</label><br /><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          maxlength="45"
+          placeholder="user@clarusway.com"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="role">Which option best describes your current role?</label>
+        <br /><br />
+        <select name="cars2" id="role">
+          <option value="select">Select current role</option>
+        </select>
+      </div><br>
+      <div>
+        <span>Would you recommend Clarusway to a friend?</span><br /><br />
+        <label>
+          <input
+            type="radio"
+            name="rec"
+            value="Definitely"
+            id="advise"
+            checked
+          />Definitely, Yes </label
+        ><br /><br />
+        <label>
+          <input type="radio" name="rec" value="Maybe" id="advise" /> Maybe
+        </label>
+        <br />
+        <br />
+        <label
+          ><input type="radio" name="rec" value="Not Sure" id="advise" /> Not
+          Sure </label
+        ><br />
+        <br />
+        <label
+          ><input type="radio" name="rec" value="No" id="advise" /> Definitely,
+          No
+        </label>
+        <br />
+      </div><br>
+      <div>
+        <label for="fav">What is your favorite feature of Clarusway?</label>
+        <br /><br />
+        <select name="fav" id="fav">
+          <option value="option">Select an option</option>
+        </select>
+      </div><br>
+      <div>
+        <label for="check"
+          >What would you like to see improved? (Check all that apply)</label
+        >
+        <br /><br />
+        <input type="checkbox" id="front" name="course" value="Bike" />
+        <label for="front"> Front-end Projects</label><br />
+        <input type="checkbox" id="back" name="course" value="Car" />
+        <label for="back"> Back-end Projects</label><br />
+        <input type="checkbox" id="data" name="course" value="Boat" />
+        <label for="data"> Data Science</label><br />
+        <input type="checkbox" id="add" name="course" value="Boat" />
+        <label for="add"> Additional Courses</label><br /> <br>
+      </div>
+
+
+      <div>
+          <label for="comment"><span>Any comments or suggestions?</span></label><br><br>
+          <textarea name="comments" id="comment" cols="22" rows="2" placeholder="Enter your comment here..Thanks for your .."></textarea>
+          <input type="submit" value="Submit">
+      </div>
+     
+    </form>
+  </body>
+</html>
